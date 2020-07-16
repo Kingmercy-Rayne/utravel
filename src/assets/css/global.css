@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+:root {
+  --primary-color: #051024;
+  --text-color--primary: #000;
+  --text-color--alt: #eee;
+  /* --text-color--tri: #CD4938; */
+  --text-color--tri: #fc553e;
+  --bg-color--primary: #fff;
+  --bg-color--alt: #fff;
+  --border-color--primary: #ccc;
+  --border-color--alt: #f8f8ff;
+  --button-bg--primary: #fc553e;
+  --button-bg--alt: #f1f1f7;
+  --search-area-bg: #f1f1f7;
+  --font-family--primary: 'Montserrat';
+  --font-family--alt: 'Catamaran';
+  /* padding-LR--global = horizontal spacing around site main components */
+  --padding-LR--global: 15%;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+li {
+  list-style-type: none;
+}
+
+body,
+html {
+  width: 100%;
+  color: var(--text-color--primary);
+  font-family: 'Montserrat', 'Catamaran', Avenir, Helvetica, Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: solid thin var(--border-color--primary);
+  color: #fff;
+  background: var(--button-background-color);
+  font-size: 1rem;
+  padding: 1em 3em;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+button:hover {
+  transform: scale(1.05);
+}
